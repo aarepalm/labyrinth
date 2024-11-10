@@ -56,7 +56,7 @@ def generate_maze(width, height):
     carve_passages(1, 1)
 
     # Set the goal position to be the bottom-right corner
-    maze[height-2][width-2] = 0
+    maze[height-3][width-3] = 0
     return maze
 
 # Function to show the time in a popup window
@@ -91,7 +91,7 @@ def main():
 
     # Character and goal positions
     player_pos = [1, 1]
-    goal_pos = [width - 2, height - 2]
+    goal_pos = [width - 3, height - 3]
 
     # Resize screen based on maze size
     screen_width = width * TILE_SIZE
